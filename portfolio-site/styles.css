@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap');
+
+:root {
+    --hacker_color: #f46e12;
+}
+
+* {
+    margin: 0;
+}
+
+img {
+    width: 40%;
+    height: auto;
+}
+
+#whatever {
+    border: dashed var(--hacker_color);
+}
+
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--hacker_color);
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+p {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+footer > img {
+    width: 5%;
+    padding: 150px;
+}
