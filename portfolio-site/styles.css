@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&display=swap');
+
+:root {
+    --hacker_color: #f46e12;
+}
+
+/* Styles all elements of the page */
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* BODY - all elements in the body are text color white, default text size is 1.5em (relative to one's browsers and settings) and Trebuchet MS font */
+body {
+    background-color: black;
+    font-size: 1.5em;
+    line-height: 1.3em;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Div class that adds a margin around all the content of the body EXCLUDING navbar and footer area */
+.margin {
+    margin-right: 200px;
+    margin-left: 200px;
+}
+
+/* Make header relative position to use ::after element */
+header, footer {
+    position: relative;
+}
+
+/* Makes a thin line (::before injects more html content immediately before the HTML element and we set content to be nothing with '') */
+footer::before {
+    position: absolute;
+    content: '';
+    top: 50px;
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(white, black);
+}
+
+/* Makes a thin line (::after injects more html content immediately after the HTML element and we set content to be nothing with '') */
+header::after {
+    position: absolute;
+    content: '';
+    top: 60px;
+    height: 3px;
+    width: 100%;
+    background: radial-gradient(white, black);
+}
+
+/* Select the direct child element of footer that is an img and make it smaller */
+footer > img {
+    width: 5%;
+}
+
+/* Turn the footer into a horizontal flexbox container of height 400px */
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 400px;
+}
+
+/* HORIZONTAL NAVBAR - contains three flex items (.left-nave, .mid-nav, .right-nav) */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: baseline;
+}
+
+.left-nav {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 1.5em;
+}
+
+.left-nav > li > a {
+    color: var(--hacker_color);
+}
+
+/* Make .mid-nav its own horizontal flex container space out its child elements */
+.mid-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.mid-nav > li > a, .right-nav > li > a {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* Make .right-nave its own horizontal flex container, space out its child elements, and align items vertically */
+.right-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: baseline;
+}
+
+.right-nav button {
+    margin-right: 50px;
+}
+
+/* Style the current page link in the navbar to have an underline */
+#active {
+    text-decoration: underline;
+}
+
+/* Style the CSS, HTML, JS image to have a orange dashed border, center it with margin auto and make it take up a whole line visually with display */
+#whatever {
+    border: dashed var(--hacker_color);
+    width: 40%;
+    height: auto;
+    display: block;
+    margin: 40px auto;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    all: unset;
+    font-size: 1.25em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+}
+
+a:hover, a:active, button:hover, button:active {
+    cursor: pointer;
+    color: grey;
+}
+
+/* H1, H2 font, color, and margin before and after */
+h1, h2 {
+    font-family: "Bebas Neue", sans-serif;
+    color: var(--hacker_color);
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
