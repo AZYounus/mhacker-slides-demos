@@ -7,7 +7,9 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      <div id="front-cover">
+        <Navbar />
+      </div>
     </>
   )
 }
