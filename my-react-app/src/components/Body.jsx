@@ -5,7 +5,12 @@ function Body() {
     return (
         <div className="grid-container">
             <div className="headshot">
-                <img src="/zohra.jpg" />
+                <div className="photo">
+                    <img src="/zohra.jpg" />
+                    <div className="my-name">
+                        <s style={{all: 'unset'}}>Aneekah</s> Zohra Younus
+                    </div>
+                </div>
             </div>
             <h1 className="title">WEB DESIGNER</h1>
             <p className="text">Hi, I'm Zohra. I design and develop clean, easy-to-use websites for all.</p>

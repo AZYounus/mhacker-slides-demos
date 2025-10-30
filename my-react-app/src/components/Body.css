@@ -26,6 +26,20 @@ img {
     grid-template-rows: auto;
 }
 
+.photo {
+    position: relative;
+}
+
+.my-name {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 200px;
+    font-size: 4rem;
+    left: -240px;
+    background-color: transparent;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+}
+
 .btn-contact {
     grid-area: btn1;
 }
