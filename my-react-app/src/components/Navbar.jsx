@@ -3,7 +3,7 @@ import './Navbar.css';
 function Navbar() {
     const url_links_left = ['/index.html'];
     const url_names_middle = ['Projects', 'Gallery', 'Courses'];
-    const url_links_middle = ['index.html', '/gallery.html', '/courses.html'];
+    const url_links_middle = ['/projects', '/gallery', '/courses'];
     const url_names_right = ['contact me'];
     const url_links_right = ['/contact.html']
 

@@ -1,18 +1,18 @@
-import Body from './Body.jsx'
-import Navbar from './Navbar.jsx'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Link } from 'react-router';
+import Home from './pages/Home';
+import Projects from './pages/Projects';
+import Navbar from './components/Navbar.jsx'
 
 function App() {
   return (
-    <>
-      <div className="frontPage">
-        <Navbar />
-        <div style={{height: 50}}></div>
-        <Body />
-      </div>
-    </>
-  )
+    <Router>
+      <Routes>
+        <Route path="/index.html" element={<Home />} />
+        <Route path="/projects" element={<Projects />} />
+      </Routes>
+    </Router>
+  );
 }
 
-
-
-export default App
+export default App;
