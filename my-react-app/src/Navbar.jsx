@@ -1,9 +1,8 @@
 import './Navbar.css';
 
 function Navbar() {
-    const url_names_left = ['home'];
     const url_links_left = ['/index.html'];
-    const url_names_middle = ['front page', 'gallery', 'courses'];
+    const url_names_middle = ['Projects', 'Gallery', 'Courses'];
     const url_links_middle = ['index.html', '/gallery.html', '/courses.html'];
     const url_names_right = ['contact me'];
     const url_links_right = ['/contact.html']
@@ -12,19 +11,15 @@ function Navbar() {
         <>
         <nav className="navbar">
             <div className="navbar-left">
-                {url_links_left.map((link, index) => (
-                    <a href={link}>{url_names_left[index]}</a>
-                ))}
+                <a href={url_links_left[0]}>Zohra Younus / <span style={{fontWeight: 100, }}>Portfolio</span></a>
             </div>
             <div className="navbar-middle">
                 {url_links_middle.map((link, index) => (
-                    <a href={link}>{url_names_middle[index]}</a>
+                    <a href={link} key={index}>{url_names_middle[index]}</a>
                 ))}
             </div>
             <div className="navbar-right">
-                {url_links_right.map((link, index) => (
-                    <a href={link}>{url_names_right[index]}</a>
-                ))}
+                <button className="button">Contact Me</button>
             </div>
         </nav>
         </>

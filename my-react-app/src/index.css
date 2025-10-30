@@ -1,6 +1,14 @@
-* {
-  box-sizing: border-box;  
-  margin: 0;
-  padding: 0;
-  background-color: #333;
+:root {
+    --dark_blue: #348888;
+    --mid_blue: #22BABB;
+    --light_blue: #9EF8EE;
+    --light_orange: #FA7F08;
+    --dark_orange: #F24405;
 }
+
+* {
+    background-color: var(--dark_blue);
+    margin: 0;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+

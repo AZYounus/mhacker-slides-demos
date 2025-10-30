@@ -1,17 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Body from './Body.jsx'
 import Navbar from './Navbar.jsx'
 
 function App() {
-
   return (
     <>
-      <div id="front-cover">
+      <div className="frontPage">
         <Navbar />
+        <div style={{height: 50}}></div>
+        <Body />
       </div>
     </>
   )
 }
+
+
 
 export default App
