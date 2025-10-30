@@ -1,7 +1,7 @@
 import './Navbar.css';
 
 function Navbar() {
-    const url_links_left = ['/index.html'];
+    const url_links_left = ['/'];
     const url_names_middle = ['Projects', 'Gallery', 'Courses'];
     const url_links_middle = ['/projects', '/gallery', '/courses'];
     const url_names_right = ['contact me'];
