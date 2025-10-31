@@ -1,7 +1,9 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Home from './pages/Home.jsx'
+import Gallery from './pages/Gallery.jsx'
+import Courses from './pages/Courses.jsx'
+import Projects from './pages/Projects.jsx'
 import Navbar from './Navbar.jsx'
+import { BrowserRouter as BrowserRouter, Routes, Route } from 'react-router-dom'
 
 function App() {
 
@@ -9,6 +11,14 @@ function App() {
     <>
       <div id="front-cover">
         <Navbar />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/projects" element={<Projects />} />
+          </Routes>
+        </BrowserRouter>
       </div>
     </>
   )
