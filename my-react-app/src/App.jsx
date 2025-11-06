@@ -9,17 +9,15 @@ function App() {
 
   return (
     <>
-      <div id="front-cover">
-        <Navbar />
-        <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/gallery" element={<Gallery />} />
-            <Route path="/courses" element={<Courses />} />
-            <Route path="/projects" element={<Projects />} />
-          </Routes>
-        </BrowserRouter>
-      </div>
+      <Navbar />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gallery" element={<Gallery />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route path="/projects" element={<Projects />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
