@@ -1,12 +1,7 @@
 .gitHubCards {
     display: grid;
-    grid-template-areas:
-        "GitHubCard0 GitHubCard0 GitHubCard0 GitHubCard0 GitHubCard1 GitHubCard1 GitHubCard1 GitHubCard1 GitHubCard2 GitHubCard2 GitHubCard2 GitHubCard2"
-        "GitHubCard3 GitHubCard3 GitHubCard3 GitHubCard3 GitHubCard4 GitHubCard4 GitHubCard4 GitHubCard4 GitHubCard5 GitHubCard5 GitHubCard5 GitHubCard5";
-    grid-template-columns: repeat(12, auto);
-    grid-template-rows: repeat(12, auto);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 400px));
     gap: 20px;
     margin-top: 30px;
     justify-content: center;
-    align-content: start;
 }

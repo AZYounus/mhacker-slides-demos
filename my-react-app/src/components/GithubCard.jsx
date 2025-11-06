@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 
-function GithubCard({ image_url, project_title, className, style }) {
+function GithubCard({ image_url, project_title, className, style, repo_link }) {
   return (
     <div className={className} style={style}>
       <Card style={{ width: '24rem' }}>
@@ -12,7 +12,7 @@ function GithubCard({ image_url, project_title, className, style }) {
             Some quick example text to build on the card title and make up the
             bulk of the card's content.
           </Card.Text>
-          <Button variant="primary">Go somewhere</Button>
+          <Button variant="primary"><a href={repo_link}>Github Link</a></Button>
         </Card.Body>
       </Card>
     </div>
