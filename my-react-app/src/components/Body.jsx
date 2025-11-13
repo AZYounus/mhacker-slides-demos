@@ -8,7 +8,7 @@ function Body() {
                 <div className="photo">
                     <img src="/zohra.jpg" />
                     <div className="my-name">
-                        <s style={{all: 'unset'}}>Aneekah</s> Zohra Younus
+                        <s style={{all: 'unset', textDecoration: 'line-through'}}>Aneekah</s> Zohra Younus
                     </div>
                 </div>
             </div>
