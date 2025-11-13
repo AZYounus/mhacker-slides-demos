@@ -12,7 +12,7 @@ function Body() {
                     </div>
                 </div>
             </div>
-            <h1 className="title">WEB DESIGNER</h1>
+            <h1 className="title">WE<span className="tumblr">B</span> DESIGN<span className="tumblr">ER</span></h1>
             <p className="text">Hi, I'm Zohra. I design and develop clean, easy-to-use websites for all.</p>
             <button className="btn-contact">Contact Me</button>
             <button className="btn-see">See Work</button>

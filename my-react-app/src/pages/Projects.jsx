@@ -23,7 +23,6 @@ function Projects() {
   return (
     <>
       <div className="frontPage">
-        <Navbar />
         <div style={{height: 50}}></div>
         <MyCard img_url={avatarURL} title={"Michigan Hackers Slideshow"} />
       </div>

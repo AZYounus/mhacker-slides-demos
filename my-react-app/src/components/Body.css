@@ -31,16 +31,38 @@ img {
     position: relative;
 }
 
+.tumblr {
+    all: unset;
+    animation-name: letterFlicker;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes letterFlicker {
+    0% {}
+}
+
 .my-name {
     position: absolute;
     transform: rotate(90deg);
-    top: 200px;
+    top: 180px;
     font-size: 4rem;
     left: -240px;
     background-color: transparent;
     font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    animation-name: moveWords;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
 }
 
+@keyframes moveWords {
+from   {left:-240px; top:180px;}
+to {left:-240px; top:270px;}
+}
 .btn-contact {
     grid-area: btn1;
 }
