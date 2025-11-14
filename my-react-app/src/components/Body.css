@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
     --ultra_dark_blue: #286767;
     --dark_blue: #348888;
@@ -21,6 +23,7 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: 4px;
 }
 
 .headshot {
@@ -39,4 +42,50 @@ button {
 p {
     color: white;
     font-size: 2rem;
+}
+
+.contact-btn {
+    all: unset;
+    text-decoration-style: none;
+    font-size: 1.8rem;
+    background-color: var(--mid_blue);
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.work-btn {
+    all: unset;
+    text-decoration-style: none;
+    font-size: 1.8rem;
+    padding: 14px;
+    border: 4px solid var(--ultra_dark_blue);
+    border-radius: 4px;
+}
+
+.my-name {
+    position: absolute;
+    top: 340px;
+    left: -140px;
+    font-size: 4rem;
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    color: var(--light_blue);
+    transform: rotate(90deg);
+    background-color: transparent;
+    animation: rotateName 2s ease-in-out infinite alternate;
+}
+
+@keyframes rotateName {
+    0% {
+
+    }
+    100% {
+        left: -140px;
+        top: 400px;
+    }
+}
+
+.title {
+    font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+    font-size: 6rem;
+    color: var(--light_blue);
 }

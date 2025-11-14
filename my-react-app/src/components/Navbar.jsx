@@ -9,7 +9,7 @@ function Navbar() {
         <>
         <nav className="navbar">
             <div className="navbar-left">
-                <a href="/">Zohra Younus / Portfolio</a>
+                <a href="/">Zohra Younus / <span style={{all: 'unset', fontWeight: '100'}}>Portfolio</span></a>
             </div>
             <div className="navbar-middle">
                 {url_links_middle.map((link, index) => (
@@ -17,7 +17,7 @@ function Navbar() {
                 ))}
             </div>
             <div className="navbar-right">
-                <button>Contact Me</button>
+                <button className="contact-btn">Contact Me</button>
             </div>
         </nav>
         </>

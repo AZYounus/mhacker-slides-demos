@@ -1,9 +1,16 @@
+:root {
+    --ultra_dark_blue: #286767;
+    --dark_blue: #348888;
+    --mid_blue: #22BABB;
+    --light_blue: #9EF8EE;
+    --light_orange: #FA7F08;
+    --dark_orange: #F24405;
+}
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
     color: #fff;
     padding: 1rem;
     margin: 0;
@@ -14,4 +21,32 @@
     display: flex;
     flex-direction: row;
     gap: 20px;
+}
+
+.navbar-left a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 1.8rem;
+    color: var(--light_blue)
+}
+
+.navbar-middle a {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 100;
+    color: var(--light_blue)
+}
+
+a {
+    all: unset;
+    text-decoration-style: none;
+    font-size: 1.6rem;
+}
+
+.contact-btn {
+    all: unset;
+    text-decoration-style: none;
+    font-size: 1.8rem;
+    background-color: var(--mid_blue);
+    padding: 16px;
+    border-radius: 4px;
 }
